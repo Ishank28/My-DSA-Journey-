@@ -1,0 +1,19 @@
+public class reverseanarray {
+    public static void reversedarray(int[] arr){
+
+        for(int i=0;i<arr.length/2;i++){
+            int temp=arr[i];
+            arr[i]=arr[arr.length-1-i];
+            arr[arr.length-1-i]=temp;
+        }
+
+        for(int a : arr){
+            System.out.println(a);
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[]={1,2,3,4,5};
+        reversedarray(arr);
+    }
+}
